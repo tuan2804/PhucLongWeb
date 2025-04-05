@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phúc Long Coffee & Tea</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div id="trangchu">
+        <!-- Navigation -->
+        <nav class="menu">
+            <div class="menu-container">
+                <div class="menu-logo">
+                    <img src="./img/logo2.jpg" alt="Phúc Long Logo">
+                </div>
+                <div class="menu-links">
+                    <a href="/index.html" class="active">TRANG CHỦ</a>
+                    <a href="/caphepage1.html">CÀ PHÊ</a>
+                    <a href="/trapage1.html">TRÀ</a>
+                    <a href="/thucUong.html">THỨC UỐNG</a>
+                    <a href="/sanPham.html">SẢN PHẨM</a>
+                    <a href="/veChungToi.html">VỀ CHÚNG TÔI</a>
+                </div>
+                <div class="menu-actions">
+                    <a href="#" class="btn-login">Đăng nhập</a>
+                    <select class="language-select">
+                        <option>VN</option>
+                        <option>EN</option>
+                    </select>
+                    <button class="cart-button">Giỏ hàng</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Slider -->
+        <div id="slide">
+            <img src="./img/anhbanner.jpg" alt="Coffee" id="hinh">
+            <div class="slide-overlay">
+                <h1>Khám Phá Hương Vị Đích Thực</h1>
+                <p>Trải nghiệm những tách cà phê và trà thượng hạng</p>
+            </div>
+            <i class="fas fa-chevron-left" onclick="prev()"></i>
+            <i class="fas fa-chevron-right" onclick="next()"></i>
+        </div>
+
+        <!-- About Section -->
+        <section class="gioithieu">
+            <div class="gtimg">
+                <img src="./img/trangchu1.jpg" alt="Coffee preparation">
+            </div>
+            <div class="gt01">
+                <h3>TỪ NHỮNG MẦM TRÀ, CHÚNG TÔI TẠO RA NIỀM ĐAM MÊ</h3>
+                <p>
+                    Trải qua hơn 50 năm chắt chiu tinh hoa từ những búp trà xanh và hạt cà phê thượng hạng cùng mong muốn mang lại 
+                    cho khách hàng những trải nghiệm giá trị nhất khi thưởng thức, Phúc Long liên tục là thương hiệu tiên phong với nhiều 
+                    ý tưởng sáng tạo đi đầu trong ngành trà và cà phê.
+                </p>
+                <button class="btn-primary">XEM THÊM</button>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="gioithieu1">
+            <div class="gt02">
+                <h3>ĐỘI NGŨ NHÂN VIÊN TRÀN ĐẦY NHIỆT HUYẾT</h3>
+                <p>
+                    Trong suốt quá trình hoạt động và phát triển, đội ngũ quản lý và nhân viên của Phúc Long Coffee & Tea, 
+                    qua bao thế hệ, đã cùng nhau xây dựng, nuôi dưỡng niềm đam mê dành cho trà và cà phê với mong muốn 
+                    được thử thách bản thân trong ngành dịch vụ năng động và sáng tạo.
+                </p>
+                <button class="btn-primary">GIA NHẬP ĐỘI NGŨ PHÚC LONG</button>
+            </div>
+            <div class="gtimg">
+                <img src="./img/anhnhanvien.avif" alt="Our Team">
+            </div>
+        </section>
+
+        <!-- Store Locator -->
+        <section id="lienhe">
+            <h2>HỆ THỐNG CỬA HÀNG</h2>
+            <div class="store-locator">
+                <div class="store-filters">
+                    <select name="city" id="city">
+                        <option value="">TỈNH/ THÀNH PHỐ</option>
+                        <option value="hcm">Thành phố Hồ Chí Minh</option>
+                        <option value="hn">Hà Nội</option>
+                        <option value="dn">Đà Nẵng</option>
+                    </select>
+                    <select name="quan" id="quan">
+                        <option value="">QUẬN/ HUYỆN</option>
+                        <option value="q1">Quận 1</option>
+                        <option value="q3">Quận 3</option>
+                        <option value="qtb">Quận Tân Bình</option>
+                    </select>
+                </div>
+                <div class="store-list">
+                    <div class="store-item">
+                        <i class="fas fa-store"></i>
+                        <div class="store-info">
+                            <h4>Phúc Long Lê Văn Sỹ</h4>
+                            <p>350 Lê Văn Sỹ, Quận 3, TP.HCM</p>
+                            <p>Điện thoại: (028) 7100 1968</p>
+                        </div>
+                        <button class="btn-directions">Chỉ đường</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="company-info">
+                    <h4>Thông tin công ty</h4>
+                    <p><strong>Trụ sở chính:</strong> Công ty Cổ Phần Phúc Long Heritage</p>
+                    <p><strong>Địa chỉ:</strong> Phòng 702, Tầng 7, Tòa nhà Central Plaza, số 17 Lê Duẩn, phường Bến Nghé, quận 1, TP.HCM</p>
+                    <p><strong>Điện thoại:</strong> 1900 234 518</p>
+                    <p><strong>Email:</strong> info@phuclong.com.vn</p>
+                </div>
+                <div class="newsletter">
+                    <h4>Đăng ký nhận tin</h4>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Nhập địa chỉ email">
+                        <button class="btn-submit">Gửi</button>
+                    </div>
+                    <div class="footer-links">
+                        <a href="#">Chính sách đặt hàng</a>
+                        <a href="#">Chính sách bảo mật</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2024 Bản quyền Phuc Long Co., Ltd</p>
+            </div>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
